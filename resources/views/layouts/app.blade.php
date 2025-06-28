@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <title>Sistem Data Mahasiswa</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="{{ asset('assets/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/DataTables-1.13.3/css/dataTables.bootstrap5.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('assets/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('assets/DataTables-1.13.3/css/dataTables.bootstrap5.css') }}">
 </head>
 
 <body>
     <div class="d-flex" style="min-height: 100vh;">
         <div class="bg-danger text-white p-3" style="min-height: 220px;">
             <div class="mb-4 text-center">
-                <img src="{{ asset('assets/image/logo.png') }}" style="max-width: 180px; height: auto;" alt="">
+                <img src="{{ secure_asset('assets/image/logo.png') }}" style="max-width: 180px; height: auto;" alt="">
             </div>
             <ul class="nav flex-column">
                 <li class="nav-item">
@@ -42,10 +42,10 @@
         </div>
     </div>
 
-    <script src="{{ asset('assets/jquery-3.6.1.js')}}"></script>
-    <script src="{{ asset('assets/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('assets/DataTables-1.13.3/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('assets/DataTables-1.13.3/js/dataTables.bootstrap5.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/jquery-3.6.1.js')}}"></script>
+    <script src="{{ secure_asset('assets/bootstrap.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/DataTables-1.13.3/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/DataTables-1.13.3/js/dataTables.bootstrap5.min.js') }}"></script>
 
     @yield('scripts')
 </body>
